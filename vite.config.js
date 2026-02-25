@@ -8,14 +8,6 @@ export default defineConfig({
     port: 5173,   
   },
   build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'router-vendor': ['react-router-dom'],
-        },
-      },
-    },
     minify: 'terser',
     terserOptions: {
       compress: {

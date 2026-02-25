@@ -158,7 +158,6 @@ To ensure fast image loading in production, follow these best practices:
 - Compress images without losing quality using:
   - [TinyPNG](https://tinypng.com/) - Free compression
   - [Squoosh](https://squoosh.app/) - Google's compression tool
-- Aim for images under 200KB each
 
 ### 3. **Lazy Loading**
 - Images are already optimized with `loading="lazy"` attribute
