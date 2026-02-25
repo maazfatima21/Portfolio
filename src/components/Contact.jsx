@@ -1,10 +1,9 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
 function Contact() {
   const form = useRef();
-  const [notification, setNotification] = useState({ type: "", message: "" });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,26 +17,12 @@ function Contact() {
       )
       .then(
         () => {
-          setNotification({
-            type: "success",
-            message: "✨ Message sent successfully! I'll get back to you soon.",
-          });
+          alert("Message sent successfully!");
           form.current.reset();
-          setTimeout(
-            () => setNotification({ type: "", message: "" }),
-            4000
-          );
         },
         (error) => {
           console.log(error.text);
-          setNotification({
-            type: "error",
-            message: "❌ Failed to send message. Please try again.",
-          });
-          setTimeout(
-            () => setNotification({ type: "", message: "" }),
-            4000
-          );
+          alert("Failed to send message. Try again.");
         }
       );
   };
@@ -45,16 +30,6 @@ function Contact() {
   return (
     <section className="contact-section" id="contact">
       <div className="contact-section-container">
-        
-        {/* Success/Error Notification */}
-        {notification.message && (
-          <div className={`notification notification-${notification.type}`}>
-            <div className="notification-content">
-              {notification.message}
-            </div>
-            <div className="notification-progress"></div>
-          </div>
-        )}
         
         {/* Title */}
         <h2 className="contact-section-title">Contact Me</h2>
