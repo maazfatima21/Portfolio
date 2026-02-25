@@ -119,6 +119,7 @@ portfolio/
 
 - **`npm run dev`** - Start the development server (http://localhost:5000)
 - **`npm run build`** - Build for production
+- **`npm run build-analyze`** - Build and analyze bundle size
 - **`npm run preview`** - Preview production build locally
 - **`npm run lint`** - Run ESLint to check code quality
 
@@ -144,7 +145,37 @@ This creates an optimized production build in the `dist/` directory.
 
 ---
 
-## 👩‍💻 Author
+## �️ Image Optimization
+
+To ensure fast image loading in production, follow these best practices:
+
+### 1. **Image Format**
+- Convert PNG images to **WebP** format (30-50% smaller)
+- Use tools like [CloudConvert](https://cloudconvert.com/) or [ImageOptim](https://imageoptim.com/)
+- Fallback to PNG for browsers that don't support WebP
+
+### 2. **Image Compression**
+- Compress images without losing quality using:
+  - [TinyPNG](https://tinypng.com/) - Free compression
+  - [Squoosh](https://squoosh.app/) - Google's compression tool
+- Aim for images under 200KB each
+
+### 3. **Lazy Loading**
+- Images are already optimized with `loading="lazy"` attribute
+- This defers image loading until they're needed
+
+### 4. **Recommended Image Sizes**
+- Project thumbnails: 800x450px (16:9 aspect ratio)
+- Profile images: 400x400px
+- Logo: 200x200px
+
+### 5. **Vercel CDN**
+- Vercel automatically optimizes images through their CDN
+- Ensure images are in `/public` folder for caching
+
+---
+
+## �👩‍💻 Author
 
 **Maaz Fatima**  
 Full Stack Developer (MERN Stack)  

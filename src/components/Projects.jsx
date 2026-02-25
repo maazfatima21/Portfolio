@@ -77,7 +77,13 @@ function Projects() {
           key={index}
         >
           <div className="project-image-box">
-            <img src={project.image} alt={project.title} />
+            <img 
+              src={project.image} 
+              alt={project.title}
+              loading="lazy"
+              decoding="async"
+              style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+            />
             {project.live !== "#" && (
               <div className="project-overlay">
                 <a href={project.live} target="_blank" rel="noreferrer">
