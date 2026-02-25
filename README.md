@@ -117,7 +117,7 @@ portfolio/
 
 ## Available Scripts
 
-- **`npm run dev`** - Start the development server (http://localhost:5173)
+- **`npm run dev`** - Start the development server (http://localhost:5000)
 - **`npm run build`** - Build for production
 - **`npm run preview`** - Preview production build locally
 - **`npm run lint`** - Run ESLint to check code quality
@@ -132,7 +132,7 @@ To start developing:
 npm run dev
 ```
 
-The application will open at `http://localhost:5173` with hot module replacement (HMR) enabled.
+The application will open at `http://localhost:5000` with hot module replacement (HMR) enabled.
 
 ## Building for Production
 
