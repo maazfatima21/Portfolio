@@ -1,9 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
 function Contact() {
   const form = useRef();
+  const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,12 +18,13 @@ function Contact() {
       )
       .then(
         () => {
-          alert("Message sent successfully!");
+          setStatus("success");
           form.current.reset();
+          setTimeout(() => setStatus(""), 4000);
         },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send message. Try again.");
+        () => {
+          setStatus("error");
+          setTimeout(() => setStatus(""), 4000);
         }
       );
   };
@@ -31,7 +33,6 @@ function Contact() {
     <section className="contact-section" id="contact">
       <div className="contact-section-container">
         
-        {/* Title */}
         <h2 className="contact-section-title">Contact Me</h2>
 
         <p className="contact-section-text">
@@ -84,6 +85,14 @@ function Contact() {
                 Send Message
               </button>
             </form>
+
+            {status === "success" && (
+              <p className="form-message success"> Message sent successfully!</p>
+            )}
+
+            {status === "error" && (
+              <p className="form-message error">Failed to send message. Please try again.</p>
+            )}
 
             <div className="contact-section-info">
               <p>
