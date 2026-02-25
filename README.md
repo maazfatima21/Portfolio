@@ -119,7 +119,6 @@ portfolio/
 
 - **`npm run dev`** - Start the development server (http://localhost:5173)
 - **`npm run build`** - Build for production
-
 - **`npm run preview`** - Preview production build locally
 - **`npm run lint`** - Run ESLint to check code quality
 
