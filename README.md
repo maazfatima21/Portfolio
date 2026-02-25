@@ -42,10 +42,10 @@ A modern, responsive portfolio website built with React and Vite to showcase my 
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](Screenshots/home.png)
+![Home Page](Screenshots/Home.png)
 
 ### About Page
-![About Page](Screenshots/about.png)
+![About Page](Screenshots/About.png)
 
 ### Project Page
 ![Project Page](Screenshots/projects.png)
