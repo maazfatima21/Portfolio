@@ -9,9 +9,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'router-vendor': ['react-router-dom'],
+        manualChunks: (id) => {
+          if (id.includes('node_modules/react')) {
+            return 'react-vendor';
+          }
+          if (id.includes('node_modules/react-router-dom')) {
+            return 'router-vendor';
+          }
         },
       },
     },
