@@ -76,7 +76,7 @@ function Projects() {
               alt={project.title}
               loading="lazy"
               decoding="async"
-              style={{ aspectRatio: '16/9', objectFit: 'cover' }}
+              style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
             />
             {project.live !== "#" && (
               <div className="project-overlay">

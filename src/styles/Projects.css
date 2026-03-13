@@ -46,13 +46,19 @@
 
 .project-image-box {
   flex: 1;
-  border-radius: 16px;
+  border-radius: 24px;
   overflow: hidden;
   position: relative;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image-box img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
   filter: brightness(0.85);
   transition: 0.6s ease;
