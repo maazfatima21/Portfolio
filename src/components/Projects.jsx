@@ -16,16 +16,18 @@ const projectsData = [
     image: "/images/EduSphere.png",
     description:
       "A fully responsive multi-page educational institution website built using React and Vite, featuring dynamic course filtering, reusable architecture, and smooth scroll-based UI interactions.",
-    tech: [
-      "React",
-      "Vite",
-      "React Router DOM",
-      "React Icons",
-      "CSS3",
-      "Vercel",
-    ],
+    tech: ["React", "Vite", "React Router DOM", "React Icons", "CSS3"],
     live: "https://edusphere-peach.vercel.app/",
     github: "https://github.com/maazfatima21/EduSphere",
+  },
+  {
+    title: "Eco-Essentials",
+    image: "/images/Eco-Essentials.png",
+    description:
+      "A modern e-commerce platform built with Next.js, featuring eco-friendly products, integrated shopping cart, secure Stripe payments, and Sanity CMS for content management.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Stripe", "Sanity CMS", "TypeScript",],
+    live: "https://eco-essentials-site.vercel.app/",
+    github: "https://github.com/maazfatima21/Eco-Essentials",
   },
   {
     title: "TastyTidBites",
@@ -36,15 +38,7 @@ const projectsData = [
     live: "https://tastytidbites.vercel.app/",
     github: "https://github.com/maazfatima21/website-",
   },
-  {
-    title: "Next.js E-Commerce Website",
-    image: "/images/nextjs.png",
-    description:
-      "SEO-optimized e-commerce website built using modern frontend technologies.",
-    tech: ["Next.js", "Stripe", "Sanity CMS"],
-    live: "#",
-    github: "#",
-  },
+  
 ];
 
 function Projects() {
