@@ -8,7 +8,7 @@ const skillsData = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express.js", "RESTful APIs", "JWT Authentication"],
+    skills: ["Node.js", "Express.js", "REST APIs", "JWT Authentication"],
   },
   {
     category: "Database",
@@ -26,6 +26,7 @@ function About() {
   useEffect(() => {
     const handleScroll = () => {
       const section = document.getElementById("about");
+      if (!section) return;
       const position = section.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.2;
 
@@ -48,16 +49,12 @@ function About() {
           <h2 className="about-title">About Me</h2>
 
           <p>
-            Computer Science graduate (2024) with hands-on experience in building 
-            full-stack web applications using the MERN stack (MongoDB, Express.js, 
-            React.js, and Node.js). I have developed real-world projects involving 
-            authentication systems, RESTful APIs, CRUD operations, and responsive 
-            frontend interfaces.
+            Computer Science graduate with hands-on experience in developing web applications and solving real-world problems.
+            Skilled in frontend and backend development, API design, and database management.
           </p>
 
           <p>
-            Currently seeking an entry-level Full Stack, React, or Software Developer 
-            role where I can contribute to real-world projects and grow as a developer.
+            I am actively seeking entry-level opportunities where I can contribute, learn, and grow in software development or related IT roles.
           </p>
         </div>
 

@@ -36,9 +36,13 @@ function Contact() {
         <h2 className="contact-section-title">Contact Me</h2>
 
         <p className="contact-section-text">
-          I am actively seeking entry-level Full Stack, React, or Software
-          Developer opportunities. If you're looking for a motivated developer
-          who can contribute to real-world projects, feel free to reach out.
+          I'm open to entry-level opportunities in software development and related IT roles. 
+          If you're looking for someone who can build, learn quickly, and contribute to real-world projects, 
+          feel free to reach out. I’d be happy to connect.
+        </p>
+
+        <p className="contact-cta">
+         🚀 Available for immediate joining 
         </p>
 
         <div className="contact-section-wrapper">

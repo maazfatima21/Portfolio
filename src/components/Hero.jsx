@@ -116,10 +116,9 @@ function Hero() {
 
       <div className="hero-title">
         <h1 className="hero-name">Maaz Fatima</h1>
-        <h2 className="hero-role">Full Stack MERN Developer</h2>
+        <h2 className="hero-role">Full Stack Developer focused on scalable web applications</h2>
         <p className="hero-description">
-          Building scalable web applications with modern UI,
-          clean architecture, and secure backend systems.
+          I build reliable and scalable applications with clean architecture, focusing on performance, usability, and real-world problem solving.
         </p>
 
         <div className="hero-wrapper">

@@ -5,8 +5,7 @@ const projectsData = [
   {
     title: "CreMaze",
     image: "/images/Cremaze.png",
-    description:
-      "A full-stack MERN e-commerce platform built for a premium ice cream brand featuring secure authentication, role-based admin dashboard, order tracking, and real-time product management.",
+    description: "Built a scalable e-commerce platform with authentication, admin dashboard, and order tracking. Implemented secure JWT-based login and optimized API performance for faster product and order management.",
     tech: ["React", "Vite", "Node.js", "Express", "MongoDB", "JWT", "Multer"],
     live: "https://cremaze2026.vercel.app",
     github: "https://github.com/maazfatima21/MERN-Ecommerce-CreMaze",
@@ -14,8 +13,7 @@ const projectsData = [
   {
     title: "EduSphere",
     image: "/images/EduSphere.png",
-    description:
-      "A fully responsive multi-page educational institution website built using React and Vite, featuring dynamic course filtering, reusable architecture, and smooth scroll-based UI interactions.",
+    description: "Developed a responsive educational website with dynamic course filtering and reusable components. Focused on smooth UI interactions and optimized frontend performance.",
     tech: ["React", "Vite", "React Router DOM", "React Icons", "CSS3"],
     live: "https://edusphere-peach.vercel.app/",
     github: "https://github.com/maazfatima21/EduSphere",
@@ -23,8 +21,7 @@ const projectsData = [
   {
     title: "Eco-Essentials",
     image: "/images/Eco-Essentials.png",
-    description:
-      "A modern e-commerce platform built with Next.js, featuring eco-friendly products, integrated shopping cart, secure Stripe payments, and Sanity CMS for content management.",
+    description: "Created a modern e-commerce app using Next.js with Stripe payments and CMS integration. Implemented server-side rendering and optimized user experience for faster load times.",
     tech: ["Next.js", "React", "Tailwind CSS", "Stripe", "Sanity CMS", "TypeScript",],
     live: "https://eco-essentials-site.vercel.app/",
     github: "https://github.com/maazfatima21/Eco-Essentials",
@@ -32,8 +29,7 @@ const projectsData = [
   {
     title: "TastyTidBites",
     image: "/images/TastyTidbites.png",
-    description:
-      "A fully responsive bakery website built using React (Vite) with modular component architecture, smooth animations, and modern frontend practices.",
+    description: "Designed a responsive bakery website with modular components and smooth animations. Focused on clean UI and performance optimization.",
     tech: ["React", "Vite", "JavaScript", "HTML5", "CSS3"],
     live: "https://tastytidbites.vercel.app/",
     github: "https://github.com/maazfatima21/website-",
